@@ -1,0 +1,2 @@
+
+<button type="primary" bindtap="btnTap">进入留言板</button>

@@ -1,0 +1,17 @@
+<template name='noteitem'>
+  <view style="background:#fff;width:100%;height:100vw;border-bottom:#f2f2f2 1px solid;position:relative;">
+    <view wx:if="{{fileid}}" style="width:100%;position:absolute;"><image mode="widthFix" src="{{fileid}}" style="width:100%;"></image></view>
+    <view style="position:absolute;left:0px;top:5px;z-index:2;width:100%;">
+      <view class="weui-flex" style="width:100%;padding:0px 10px;">
+        <view class="weui-flex__item" style="margin-left:5px;margin-top:-5px;">
+          <view class='weui-flex' style="height:24px;line-height:24px;">
+            <view class='weui-flex__item' style="font-size:12px;overflow:hidden;white-space:nowrap;text-overflow:ellipsis;">
+              
+            </view>
+            <view id='{{_id}}' bindtap="btnCommentAction" class="iconfont icon-more" style="color:#999;"></view>
+          </view>
+        </view>
+      </view>
+    </view>
+  </view>
+</template>
